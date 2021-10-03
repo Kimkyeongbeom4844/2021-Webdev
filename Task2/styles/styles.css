@@ -1,0 +1,12 @@
+    img {
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: -40px;
+        width: 50%;
+        height: 1%
+    }
+    h2 {
+        margin-left: 20px;
+    }
+    li > ul {padding-bottom: 10px}
