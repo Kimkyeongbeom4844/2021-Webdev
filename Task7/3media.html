@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {margin: 0; padding: 0;}
+    .clearfix::after, .clearfix::before {display: block; content: ''; clear: both;}
+    #header {width: 960px; height: 120px; background-color: #c3590a; border-bottom: 1px solid #000;}
+    #article {width: 960px;}
+    #aside {float:left; width: 600px; padding: 15px; height: 400px; background-color: #ffd800;}
+    #section {float:left; width: 300px; padding: 15px; height: 400px; background-color: #00ff90;}
+    #footer {width: 960px; height: 120px; background-color: #066cfa;}
+    @media all and (max-width: 1025px) {
+        #aside {float:left; width: 450px; padding: 15px; height: 400px; background-color: #ffd800;}
+        #section {float:left; width: 450px; padding: 15px; height: 400px; background-color: #00ff90;}
+    }
+    @media all and (max-width: 768px) {
+        #aside {float:left; width: 960px; height: 400px; background-color: #ffd800;}
+        #section {float:left; width: 960px; height: 400px; background-color: #00ff90;}
+    }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="article" class="clearfix">
+            <div id="aside"></div>
+            <div id="section"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
